@@ -8,6 +8,7 @@ const additem = document.getElementById("additem");
 
 console.log(additem);
 
+/*
 if (additem.addEventListener) {
 	additem.addEventListener("submit", function(event) {
 		event.preventDefault();
@@ -20,4 +21,14 @@ else {
 		//window.history.back();
 	});
 }
+*/
+
+additem.addEventListener("submit", function (event) {
+	//if (event.key === 'Enter') voegNaamToe();
+	event.preventDefault();
+//	console.log(event);
+	console.log(customer.innerHTML);
+	
+});
+
 
