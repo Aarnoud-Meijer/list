@@ -28,7 +28,15 @@ additem.addEventListener("submit", function (event) {
 	event.preventDefault();
 //	console.log(event);
 	console.log(customer.innerHTML);
-	
+
+//	console.log(document.getElementById('customer').children);
+
+	var childs = customer.children;
+	console.log(childs);
+	for (var i=0; i < childs.length; i++) {
+		console.log(childs[i]);
+	}
+
 });
 
 
