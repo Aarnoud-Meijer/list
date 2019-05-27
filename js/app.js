@@ -8,16 +8,20 @@ const additem = document.getElementById("additem");
 
 //console.log(additem);
 
+
+// add items to list
 additem.addEventListener("submit", function (event) {
-
 	event.preventDefault();
-
-	var childs = customer.children;
-//	console.log(childs);
+//	console.log(additem.value);
+	let childs = customer.children;
+//	console.log(childs[0].value);
+	let iteminput = document.getElementById("iteminput");
+	console.log(iteminput.value);
 	for (var i=0; i < childs.length; i++) {
 		console.log(childs[i]);
 	}
-
+	customer.innerHTML +="<li>"+iteminput.value+"</li>";
+	iteminput.value="";
 });
 
 
@@ -29,20 +33,3 @@ arrow.addEventListener("click", function (event) {
 		console.log(items[i]);
 	}
 });
-
-
-/*
-if (additem.addEventListener) {
-	additem.addEventListener("submit", function(event) {
-		event.preventDefault();
-		window.history.back();
-	}, true);
-}
-else {
-	additem.attachEvent('onsubmit', function(event){
-		event.preventDefault();
-		//window.history.back();
-	});
-}
-*/
-
