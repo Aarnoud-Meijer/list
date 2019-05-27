@@ -1,0 +1,67 @@
+
+/*	reset	*/
+*{margin: 0;padding: 0;box-sizing: border-box;}
+a, a:focus, object, img{outline:none;border:0}
+
+/*	usual suspects	*/
+.none		{display:none;height:0;}
+.clear		{clear:both}
+.left		{float:left}
+.right		{float:right}
+.aligncenter{text-align:center}
+.alignleft	{text-align:left}
+.alignright	{text-align:right}
+
+/*	default	*/
+body{text-align:center;/*background-color:#999*/font-family:'Roboto', sans-serif;}
+header,nav,menu,article,aside,footer,section,details,figcaption,figure,hgroup{display: block}
+
+/* moz hack */
+:focus {outline:none;}
+::-moz-focus-inner {border:0;}
+
+/*form input:focus::-moz-placeholder*/
+::-moz-placeholder, ::-webkit-input-placeholder, :-ms-input-placeholder{
+/*	gets all placeholders
+line-height: normal;*/
+}
+
+nav ul li {
+	list-style-type:none;
+}
+
+ol {
+	float: left;
+	margin: 1em;
+	text-align: left;
+	padding: 2em;
+	border: 1px solid #aaa;
+	border-radius: 5px;
+}
+
+ol label{
+	margin:1em;
+	padding-bottom:1em;
+}
+
+/*																		@media */
+@media all and (max-width: 900px){
+
+	.container{ width:100%; }
+}
+
+@media print{ 
+	/*@import('print.css')*/
+
+	*, header, .contact, .content{
+		background-color: transparent;border:0;
+	}
+}
+
+@media all and (min-width: 900px){ /* --- new background --- */
+
+	html, body::before, body::after{ width:100%;height:100%;min-height:100%;}
+
+	html{
+	}
+}
