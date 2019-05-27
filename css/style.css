@@ -65,3 +65,28 @@ ol label{
 	html{
 	}
 }
+
+/*	Main	*/
+
+article{
+	margin:5px auto;
+	width:100%;
+	text-align:left;
+	border:1px solid #f3f;
+}
+
+#customer{
+	
+}
+
+#arrow{
+
+}
+
+#plan{
+
+}
+
+
+#customer, #arrow, #plan{ border:1px solid #333; width:100px;height:100px;float;left}
+
