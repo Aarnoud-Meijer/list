@@ -7,7 +7,7 @@ const plan = document.getElementById('plan');
 const additem = document.getElementById("additem");
 
 //console.log(additem);
-
+const collection = []; // array for items
 
 // add items to list
 additem.addEventListener("submit", function (event) {
@@ -20,8 +20,10 @@ additem.addEventListener("submit", function (event) {
 	for (var i=0; i < childs.length; i++) {
 		console.log(childs[i]);
 	}
+	collection.push(iteminput.value);
 	customer.innerHTML +="<li>"+iteminput.value+"</li>";
 	iteminput.value="";
+	console.log(collection);
 });
 
 
