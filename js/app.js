@@ -7,7 +7,9 @@ const plan = document.getElementById('plan');
 const additem = document.getElementById("additem");
 
 //console.log(additem);
-const collection = []; // array for items
+
+let collection = [];
+let basket = [];
 
 // add items to list
 additem.addEventListener("submit", function (event) {
@@ -27,7 +29,24 @@ additem.addEventListener("submit", function (event) {
 arrow.addEventListener("click", function (event) {
 	var items = customer.children;
 
-	for (var i=0; i < items.length; i++) {
-		console.log(items[i]);
+	for (var i=0; i < collection.length; i++) {
+
+		basket.push(collection[i]);
+		plan.innerHTML +="<li>"+basket[i]+"</li>";
+	}
+	collection=[]; // clear
+	customer.innerHTML="";
+});
+
+// sort items in basket
+sort.addEventListener("click", function (event) {
+	var items = customer.children;
+
+	basket.sort();
+	plan.innerHTML="";
+
+	for (var i=0; i < basket.length; i++) {
+		plan.innerHTML +="<li>"+basket[i]+"</li>";
 	}
 });
+

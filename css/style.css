@@ -81,7 +81,7 @@ article{
 	
 }
 
-ul#customer li, #plan ul li{
+ul#customer li, ul#plan li{
 	list-style-type:none;
 }
 
