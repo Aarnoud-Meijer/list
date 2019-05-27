@@ -80,7 +80,8 @@ article{
 #customer{
 	
 }
-#customer ul li, #plan ul li{
+
+ul#customer li, #plan ul li{
 	list-style-type:none;
 }
 

@@ -6,7 +6,30 @@ const plan = document.getElementById('plan');
 // additem
 const additem = document.getElementById("additem");
 
-console.log(additem);
+//console.log(additem);
+
+additem.addEventListener("submit", function (event) {
+
+	event.preventDefault();
+
+	var childs = customer.children;
+//	console.log(childs);
+	for (var i=0; i < childs.length; i++) {
+		console.log(childs[i]);
+	}
+
+});
+
+
+// add items to basket
+arrow.addEventListener("click", function (event) {
+	var items = customer.children;
+//	console.log(childs);
+	for (var i=0; i < items.length; i++) {
+		console.log(items[i]);
+	}
+});
+
 
 /*
 if (additem.addEventListener) {
@@ -22,21 +45,4 @@ else {
 	});
 }
 */
-
-additem.addEventListener("submit", function (event) {
-	//if (event.key === 'Enter') voegNaamToe();
-	event.preventDefault();
-//	console.log(event);
-	console.log(customer.innerHTML);
-
-//	console.log(document.getElementById('customer').children);
-
-	var childs = customer.children;
-	console.log(childs);
-	for (var i=0; i < childs.length; i++) {
-		console.log(childs[i]);
-	}
-
-});
-
 
