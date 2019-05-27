@@ -73,10 +73,15 @@ article{
 	width:900px;
 	text-align:left;
 	border:1px solid #f3f;
+	display: inline-flex;
 }
+
 
 #customer{
 	
+}
+#customer ul li, #plan ul li{
+	list-style-type:none;
 }
 
 #arrow{
@@ -84,7 +89,8 @@ article{
 }
 
 #plan{
-
+	float:right;
+	display:inline-block;
 }
 
 
