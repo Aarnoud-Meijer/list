@@ -5,3 +5,11 @@ make an app to add custommers and plans
 use browser storage first! if finished/like submit to backend to store in db.
 
  
+
+echo "# list" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin git@github.com:Aarnoud-Meijer/list.git
+git push -u origin master
+
